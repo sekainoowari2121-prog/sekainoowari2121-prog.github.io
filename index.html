@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>RRplayer — Google Drive対応 Android音楽プレイヤー</title>
+<meta name="description" content="RRplayerは、Google Drive上の音楽ファイルと端末内の音楽を統合して再生する、個人開発のAndroid向け音楽プレイヤーです。">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+  <div class="wrap">
+    <div class="brand">
+      <h1>RRplayer</h1>
+      <p class="sub">Reference Remastered</p>
+      <p class="lead">Google Drive上の音楽と、端末に保存した音楽を、ひとつのライブラリとして再生するAndroid向け音楽プレイヤーです。個人が自分用に開発しているアプリで、一般公開や販売は行っていません。</p>
+    </div>
+    <nav>
+      <a href="index.html" aria-current="page">アプリについて</a>
+      <a href="privacy.html">プライバシーポリシー</a>
+    </nav>
+  </div>
+</header>
+
+<div class="wrap">
+
+<h2>RRplayerでできること</h2>
+
+<h3>クラウドと端末の音楽をまとめて扱う</h3>
+<p>Google Driveに置いた音楽ファイルと、端末の中にある音楽ファイルを、同じ一覧に並べて再生します。どちらに入っている曲かを意識せずに選べます。</p>
+
+<h3>通信が不安定でも再生を続ける</h3>
+<p>再生中の曲を一時的に端末へ蓄えておくことで、電波が弱い場所やトンネルなどでも音が途切れにくくなります。一時的に蓄えたデータは最大1GBまでで、設定した期間（1週間・2週間・1か月）を過ぎると自動的に消えます。</p>
+
+<h3>よく聴く曲を端末に保存する</h3>
+<p>Google Drive上の曲を選んで端末へ保存できます。保存するときの形式は、元のまま・AAC・MP3・WAVから選べます。保存した曲は通信がなくても再生できます。</p>
+
+<h3>再生元を自分で選ぶ</h3>
+<p>「クラウドの音源を優先する」「端末に保存した音源を優先する」の2つを、利用者が手動で切り替えます。RRplayerが通信状況を見て勝手に切り替えることはありません。高音質の音源を再生している最中に、知らないうちに圧縮された音源へ切り替わることを防ぐためです。</p>
+
+<h3>音質を調整する</h3>
+<p>加工をせずそのまま再生する方式に加えて、10本のつまみで調整する方式と、周波数・強さ・効く幅まで細かく設定する方式を選べます。調整した内容は名前を付けて保存でき、Bluetoothイヤホンやハイレゾ対応機器など、つないだ機器ごとに記憶して自動的に呼び出します。</p>
+
+<h3>いま何がどう再生されているかを表示する</h3>
+<p>再生中の曲について、音源の入手元・形式・サンプリング周波数・ビット数・音質調整の有無・接続している機器を画面に表示します。</p>
+
+<h2>Google Driveを利用する目的</h2>
+
+<div class="card">
+<p>RRplayerは、利用者がご自身のGoogle Driveに保存している音楽ファイルを再生するために、Google Driveへの<strong>読み取りのみ</strong>の接続を利用します。</p>
+<p>利用する権限は <code>https://www.googleapis.com/auth/drive.readonly</code> の1つだけです。</p>
+</div>
+
+<p>この権限は、次の目的にのみ使用します。</p>
+<ul>
+  <li>音楽フォルダの一覧を表示するため</li>
+  <li>音楽ファイルの曲名・アーティスト名などの情報を読み取るため</li>
+  <li>音楽ファイルを読み込んで再生するため、および利用者が指定した曲を端末へ保存するため</li>
+  <li>Google Drive上に置かれたプレイリストファイル（M3U / M3U8）を読み取るため</li>
+</ul>
+
+<p>RRplayerは、Google Drive上のファイルを<strong>作成・変更・削除・移動しません</strong>。また、音楽以外のファイルを読み取る用途には使用しません。</p>
+
+<p>読み取ったデータの扱いについては、<a href="privacy.html">プライバシーポリシー</a>に記載しています。</p>
+
+<h2>対応環境</h2>
+
+<table>
+  <tr><th>対応OS</th><td>Android 10 以降</td></tr>
+  <tr><th>主な確認端末</th><td>Galaxy S23 Ultra</td></tr>
+  <tr><th>対応クラウド</th><td>Google Drive のみ</td></tr>
+  <tr><th>配布方法</th><td>一般配布は行っていません（開発者本人の端末で利用）</td></tr>
+  <tr><th>料金</th><td>無償。広告および課金はありません</td></tr>
+</table>
+
+<h2>お問い合わせ</h2>
+<p>RRplayerおよび本ページに関するお問い合わせは、次の連絡先までお願いします。</p>
+<div class="card">
+<p>連絡先：<code>sekainoowari2121@gmail.com</code></p>
+</div>
+
+<div class="en">
+<h2>About RRplayer (English)</h2>
+<p>RRplayer is a personal, non-commercial Android music player developed by an individual for their own use. It plays music files stored in the user's own Google Drive alongside music stored on the device.</p>
+<p>RRplayer requests a single OAuth scope, <code>https://www.googleapis.com/auth/drive.readonly</code>, solely to list the user's music folders, read track metadata, and stream or download the user's own music files for playback. It also reads M3U / M3U8 playlist files stored in Drive.</p>
+<p>RRplayer never creates, modifies, deletes or moves any file in Google Drive. It does not transmit Google user data to any server operated by the developer or to any third party. See the <a href="privacy.html">Privacy Policy</a> for details.</p>
+</div>
+
+<footer>
+  <p>RRplayer — Reference Remastered<br>個人開発アプリ / Personal, non-commercial application</p>
+</footer>
+
+</div>
+</body>
+</html>

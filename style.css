@@ -1,0 +1,86 @@
+:root {
+  --bg: #101215;
+  --surface: #191d22;
+  --text: #e8eaed;
+  --muted: #969da6;
+  --gold: #d7bc82;
+  --line: #2a2f36;
+}
+* { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font-family: "Hiragino Sans", "Noto Sans JP", "Yu Gothic", Meiryo, system-ui, sans-serif;
+  line-height: 1.9;
+  font-size: 16px;
+}
+.wrap { max-width: 760px; margin: 0 auto; padding: 0 20px 80px; }
+header { border-bottom: 1px solid var(--line); margin-bottom: 44px; }
+.brand { padding: 56px 0 40px; }
+.brand h1 {
+  margin: 0;
+  font-size: 34px;
+  font-weight: 500;
+  letter-spacing: 0.04em;
+}
+.brand .sub {
+  margin: 10px 0 0;
+  color: var(--gold);
+  font-size: 11px;
+  letter-spacing: 0.34em;
+  text-transform: uppercase;
+}
+.brand .lead { margin: 22px 0 0; color: var(--muted); font-size: 15px; }
+nav { padding-bottom: 22px; display: flex; gap: 22px; flex-wrap: wrap; }
+nav a { color: var(--muted); font-size: 14px; }
+nav a[aria-current] { color: var(--gold); }
+h2 {
+  margin: 44px 0 14px;
+  font-size: 19px;
+  font-weight: 500;
+  padding-bottom: 10px;
+  border-bottom: 1px solid var(--line);
+}
+h3 { margin: 28px 0 8px; font-size: 16px; font-weight: 500; color: var(--gold); }
+p, li { font-size: 15px; }
+a { color: var(--gold); text-decoration: none; }
+a:hover { text-decoration: underline; }
+ul { padding-left: 1.3em; }
+li { margin: 6px 0; }
+.card {
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  padding: 20px 24px;
+  margin: 20px 0;
+}
+.card p:first-child { margin-top: 0; }
+.card p:last-child { margin-bottom: 0; }
+table { width: 100%; border-collapse: collapse; margin: 18px 0; font-size: 14px; }
+th, td { text-align: left; padding: 11px 12px; border-bottom: 1px solid var(--line); vertical-align: top; }
+th { color: var(--muted); font-weight: 500; white-space: nowrap; }
+code {
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: 4px;
+  padding: 2px 6px;
+  font-size: 13px;
+  font-family: ui-monospace, "SF Mono", Consolas, monospace;
+  word-break: break-all;
+}
+.en { color: var(--muted); font-size: 14px; }
+.en h2 { color: var(--muted); }
+footer {
+  margin-top: 64px;
+  padding-top: 22px;
+  border-top: 1px solid var(--line);
+  color: var(--muted);
+  font-size: 13px;
+}
+@media (max-width: 560px) {
+  .brand { padding: 40px 0 30px; }
+  .brand h1 { font-size: 27px; }
+  .wrap { padding: 0 16px 60px; }
+}
