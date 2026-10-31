@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>rclone-backup — 個人用のバックアップ設定</title>
+<meta name="description" content="rclone-backup は、開発者が自分の PC のファイルを自分の Google Drive へバックアップするための、個人用の rclone の設定です。">
+<link rel="stylesheet" href="../style.css">
+</head>
+<body>
+<header>
+  <div class="wrap">
+    <div class="brand">
+      <h1>rclone-backup</h1>
+      <p class="sub">個人用のバックアップ設定</p>
+      <p class="lead">開発者が自分の PC（外付け SSD）にある開発用のファイルを、自分の Google Drive へ 1 時間ごとにバックアップするための、個人用の設定です。一般公開や販売は行っていません。</p>
+    </div>
+    <nav>
+      <a href="index.html" aria-current="page">この設定について</a>
+      <a href="privacy.html">プライバシーポリシー</a>
+    </nav>
+  </div>
+</header>
+
+<div class="wrap">
+
+<h2>しくみ</h2>
+<p>オープンソースの同期ソフト <a href="https://rclone.org/">rclone</a> を、開発者本人の Windows PC で動かします。PC のフォルダの中身を、開発者本人の Google Drive の決まったフォルダへ一方向に写し、変わったファイルの前の中身は同じ Drive の中に 90 日残します。</p>
+
+<h2>Google Drive を利用する目的</h2>
+<p>利用する権限は <code>https://www.googleapis.com/auth/drive</code> の 1 つです。バックアップの写し先のフォルダへファイルを書き込み、古い写しを整理するために使います。</p>
+<ul>
+  <li>使うのは開発者本人の Google アカウントだけです。ほかの人のアカウントでは使いません</li>
+  <li>データは PC と開発者本人の Google Drive のあいだで直接やりとりされ、ほかのサーバーや第三者へは送りません</li>
+</ul>
+
+<h2>お問い合わせ</h2>
+<p>連絡先：sekainoowari2121@gmail.com</p>
+
+<div class="en">
+<h2>About (English)</h2>
+<p>rclone-backup is a personal, non-commercial configuration of the open-source tool rclone. It backs up the developer's own files from their own PC to their own Google Drive, once an hour.</p>
+<p>It requests the scope <code>https://www.googleapis.com/auth/drive</code> only to write backup copies to, and tidy old copies in, a folder of the developer's own Drive. It is used only with the developer's own Google account. No Google user data is sent to any server other than Google's, or to any third party. See the <a href="privacy.html">Privacy Policy</a>.</p>
+</div>
+
+<footer>
+  <p>rclone-backup<br>個人用の設定 / Personal, non-commercial configuration</p>
+</footer>
+
+</div>
+</body>
+</html>
