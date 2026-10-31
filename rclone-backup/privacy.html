@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>プライバシーポリシー — rclone-backup</title>
+<link rel="stylesheet" href="../style.css">
+</head>
+<body>
+<header>
+  <div class="wrap">
+    <div class="brand">
+      <h1>プライバシーポリシー</h1>
+      <p class="sub">rclone-backup</p>
+      <p class="lead">rclone-backup（以下「本設定」）が取り扱う情報と、その利用目的・保管方法・削除方法について説明します。</p>
+    </div>
+    <nav>
+      <a href="index.html">この設定について</a>
+      <a href="privacy.html" aria-current="page">プライバシーポリシー</a>
+    </nav>
+  </div>
+</header>
+
+<div class="wrap">
+
+<h2>1. 基本方針</h2>
+<p>本設定は、開発者が自分の PC のファイルを自分の Google Drive へバックアップするためだけに使う、個人用の設定です。開発者本人の Google アカウントでのみ使います。独自のサーバーは持たず、情報が開発者や第三者の管理するサーバーへ送られることはありません。</p>
+
+<h2>2. 取得する情報と利用目的</h2>
+<ul>
+  <li><strong>Google Drive への接続を許可する情報（アクセストークン）</strong>：開発者本人の Google Drive の写し先のフォルダへファイルを書き込み、古い写しを整理するため。開発者本人の PC の中（rclone の設定ファイル）にだけ保管します</li>
+  <li><strong>Google Drive 上のファイルの名前・大きさ・更新日時・内容</strong>：バックアップの写しを作り、どれが新しいかを比べるため</li>
+</ul>
+<p>利用する権限は <code>https://www.googleapis.com/auth/drive</code> の 1 つです。</p>
+
+<h2>3. 行わないこと</h2>
+<ul>
+  <li>取得した情報を、Google 以外のサーバーや第三者へ送信・提供・販売しません</li>
+  <li>広告、解析、人工知能・機械学習モデルの開発や学習のために利用しません</li>
+  <li>バックアップ以外の目的で利用しません</li>
+</ul>
+
+<h2>4. 保管と削除</h2>
+<p>接続を許可する情報は、開発者本人の PC の中にだけ保管します。Google アカウントの管理画面（アカウントにアクセスできるアプリ）から rclone-backup を削除すると、いつでも接続を取り消せます。</p>
+
+<h2>5. Google ユーザーデータの限定利用について</h2>
+<p>本設定による Google API から取得した情報の利用および他アプリへの移転は、Google API サービスのユーザーデータに関するポリシー（限定的使用の要件を含む）に準拠します。</p>
+
+<h2>6. お問い合わせ</h2>
+<p>連絡先：sekainoowari2121@gmail.com</p>
+
+<div class="en">
+<h2>Privacy Policy (English)</h2>
+<p>rclone-backup is a personal configuration used only with the developer's own Google account to back up the developer's own files to their own Google Drive. The OAuth token is stored only on the developer's own PC. Google user data is used only to create and tidy backup copies, is never sent to any server other than Google's, and is never shared, sold, or used for advertising or AI/ML training. Use of information received from Google APIs adheres to the Google API Services User Data Policy, including the Limited Use requirements. Access can be revoked at any time from the Google Account's third-party access page.</p>
+</div>
+
+<footer>
+  <p>rclone-backup<br>個人用の設定 / Personal, non-commercial configuration</p>
+</footer>
+
+</div>
+</body>
+</html>
